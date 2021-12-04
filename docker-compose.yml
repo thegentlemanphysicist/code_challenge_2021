@@ -7,8 +7,8 @@ services:
       context: ./jons-app
       dockerfile: Dockerfile
     volumes:
-      - './jons-app:/app'
-      - /app/node_modules
+      - './jons-app:/jons-app'
+      - /jons-app/node_modules
     ports:
       - "3000:3000"
     tty: true
