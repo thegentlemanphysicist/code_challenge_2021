@@ -8,8 +8,8 @@ FROM node:12.17.0-alpine
 # ENV PATH /app/node_modules/.bin:$PATH
 
 # install app dependencies
-COPY jons-app/package.json ./
-COPY jons-app/yarn.lock ./
+COPY package.json ./
+COPY yarn.lock ./
 RUN yarn install --silent
 
 # add bash to the image
