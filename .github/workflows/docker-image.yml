@@ -1,7 +1,11 @@
 name: Docker Image CI
 
 on:
-  workflow_dispatch
+    workflow_dispatch:
+      inputs:
+        release:
+          description: 'Release'     
+          required: true
 
 jobs:
 
@@ -11,6 +15,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Checkout the realease
+      run: git checkout tags/${{ github.event.inputs.release }}
     - name: Login to Heroku Container registry
       env: 
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
