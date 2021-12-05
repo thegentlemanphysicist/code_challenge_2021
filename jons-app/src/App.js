@@ -1,7 +1,5 @@
-import logo from './logo.svg';
 import jonphoto from './jonphoto.jpg'
 import './App.css';
-
 function App() {
   return (
     <div className="App">
@@ -11,6 +9,7 @@ function App() {
         </p>
         <img src={jonphoto} className="jon-photo" style={{ width: '300px' }} alt="me" />
         <p>He's awesome!!</p>
+        <p>This is not in version 1.0.0</p>
       </header>
     </div>
   );

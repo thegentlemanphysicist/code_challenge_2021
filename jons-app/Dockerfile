@@ -1,12 +1,6 @@
 # pull official base image
 FROM node:12.17.0-alpine
 
-# set working directory
-# WORKDIR /jons-app
-
-# add `/app/node_modules/.bin` to $PATH
-# ENV PATH /app/node_modules/.bin:$PATH
-
 # install app dependencies
 COPY package.json ./
 COPY yarn.lock ./
