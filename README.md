@@ -11,7 +11,7 @@ The pipeline image is [Here](PipelineDiagram/pipeline.drawio.png).  With further
 
 The app being deployed is a simple dockerized react app.  Local development can be managed through the usual `docker-compose build` and `docker-compose up` command on a local machine.
 
-This a GitHub actions pipeline.  On creation of a release, a user with write access can trigger a deployment of a react app to heroku.  [Live App](https://jon-code-challenge.herokuapp.com/)
+This is a GitHub actions pipeline.  On creation of a release, a user with write access can trigger a deployment of a react app to heroku.  [Live App](https://jon-code-challenge.herokuapp.com/)
 
 There are two actions.  
 
