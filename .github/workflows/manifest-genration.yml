@@ -19,9 +19,8 @@ jobs:
     - name: Write File
       uses: DamianReeves/write-file-action@v1.0
       with:
-       path: manifest.md
+       path: ${{ env.home}}/manifest.md
        contents: |
          echo "Hello World!"
        write-mode: append
-    - name: Run one line
-      run:  echo Hello, world!
+
