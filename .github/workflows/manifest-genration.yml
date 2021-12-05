@@ -3,10 +3,6 @@ name: Manifest Generation
 on:
   release:
     types: [published]
-#   push:
-#     branches: [ main ]
-#   pull_request:
-#     branches: [ main ]
 
 jobs:
 
@@ -23,7 +19,7 @@ jobs:
       with:
        path: manifest.md
        contents: |
-         Release number: ${{github.head_ref}}
+         Release number: ${{github.ref}}
          
          Release date: ${{github.event_name}}
          
