@@ -19,8 +19,12 @@ jobs:
     - name: Write File
       uses: DamianReeves/write-file-action@v1.0
       with:
-       path: ${{ env.home}}/manifest.md
+       path: manifest.md
        contents: |
          echo "Hello World!"
        write-mode: append
-
+    - run: git add manifest.md
+    - run: git commit -m "Manifest updated"
+    - run: "git push https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git HEAD"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
