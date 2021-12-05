@@ -16,8 +16,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    -uses: DamianReeves/write-file-action
-     with:
+    - name: Write File
+      uses: DamianReeves/write-file-action@v1.0
+      with:
        path: manifest.md
        contents: |
          echo "Hello World!"
