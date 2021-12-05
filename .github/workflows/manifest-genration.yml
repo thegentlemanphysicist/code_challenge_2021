@@ -23,7 +23,8 @@ jobs:
       with:
        path: manifest.md
        contents: |
-         echo "Hello World!"
+         Release published by  ${{ github.actor }}
+         ---
        write-mode: append
     - run: git config --local user.email "action@github.com"
     - run: git config --local user.name "GitHub Action"
