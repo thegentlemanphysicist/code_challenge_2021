@@ -23,7 +23,6 @@ jobs:
       with:
        path: manifest.md
        contents: |
-       
          Release number: ${{github.head_ref}}
          
          Release date: ${{github.event_name}}
@@ -31,6 +30,7 @@ jobs:
          Release published by:  ${{ github.actor }}
          
          ---
+         
          
        write-mode: append
     - run: git config --local user.email "action@github.com"
