@@ -31,4 +31,11 @@ Release date:  \
 
 Release published by:  thegentlemanphysicist \
 
+---\
+Release number: refs/tags/v1.0.15 
+
+Release date: $(date +'%Y-%m-%dT%H:%M:%S') 
+
+Release published by:  thegentlemanphysicist 
+
 ---
