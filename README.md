@@ -29,3 +29,4 @@ This allows a very simple roll back stratgy of simply building and deploying an 
 
 ## 3) SRE Implementation Strategy
 
+The SRE strategy can be found in the docs folder [Here](docs/SREImplementationStrategyDocument.md)
