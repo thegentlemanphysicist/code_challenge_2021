@@ -20,11 +20,11 @@ jobs:
        path: manifest.md
        contents: |
          \
-         Release number: ${{github.ref}} \
+         Release number: ${{github.ref}} 
          
-         Release date: ${{ steps.date.outputs.date }} \
+         Release date: $(date +'%Y-%m-%dT%H:%M:%S') 
          
-         Release published by:  ${{ github.actor }} \
+         Release published by:  ${{ github.actor }} 
          
          ---
          
