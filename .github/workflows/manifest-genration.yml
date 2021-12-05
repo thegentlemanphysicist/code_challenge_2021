@@ -16,5 +16,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    -uses: DamianReeves/write-file-action
+     with:
+       path: manifest.md
+       contents: |
+         echo "Hello World!"
+       write-mode: append
     - name: Run one line
       run:  echo Hello, world!
