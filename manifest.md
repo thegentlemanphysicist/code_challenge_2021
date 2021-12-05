@@ -1,2 +1,5 @@
 # This is a manifest of releases that have been deployed
-echo "Hello World!"
+
+Note much of this content can be seen [Here](https://github.com/thegentlemanphysicist/code_challenge_2021/releases).  However for more complicated deployments we could also log thing like build and deployment parameters passed into the build
+
+---
