@@ -24,9 +24,9 @@ jobs:
        path: manifest.md
        contents: |
        
-         Release number: ${{github.event.GITHUB_REF}}
+         Release number: ${{github.head_ref}}
          
-         Release date: ${{github.event.type}}
+         Release date: ${{github.event_name}}
          
          Release published by:  ${{ github.actor }}
          
