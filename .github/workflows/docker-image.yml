@@ -16,7 +16,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Checkout the realease
-      run: git checkout tags/${{ github.event.inputs.release }}
+      uses: actions/checkout@v2
+      with:
+        ref: tags/${{ github.event.inputs.release }}
     - name: Login to Heroku Container registry
       env: 
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
