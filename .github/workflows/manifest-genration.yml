@@ -25,8 +25,8 @@ jobs:
        contents: |
          echo "Hello World!"
        write-mode: append
-#     - run: git config --local user.email "action@github.com"
-#     - run: git config --local user.name "GitHub Action"
+    - run: git config --local user.email "action@github.com"
+    - run: git config --local user.name "GitHub Action"
     - run: git add manifest.md
     - run: git commit -m "Manifest updated"
 #     - run: "git push https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git HEAD"
