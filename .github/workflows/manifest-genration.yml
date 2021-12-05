@@ -24,7 +24,7 @@ jobs:
          \
          Release number: ${{github.ref}} 
          
-         Release date: ${{$NOW}} 
+         Release date: $NOW 
          
          Release published by:  ${{ github.actor }} 
          
