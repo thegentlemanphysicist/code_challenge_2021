@@ -15,7 +15,7 @@ jobs:
       with:
        ref: main
     - name: Set current date as env variable
-      run: echo "NOW::$(date +'%Y-%m-%dT%H:%M:%S')" >> $GITHUB_ENV
+      run: echo "NOW=$(date +'%Y-%m-%dT%H:%M:%S')" >> $GITHUB_ENV
     - name: Write File
       uses: DamianReeves/write-file-action@v1.0
       with:
@@ -24,7 +24,7 @@ jobs:
          \
          Release number: ${{github.ref}} 
          
-         Release date: $NOW 
+         Release date: ${{env.NOW}}
          
          Release published by:  ${{ github.actor }} 
          
