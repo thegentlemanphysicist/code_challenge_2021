@@ -5,7 +5,7 @@ There will be 3 artifacts that will be included in this coding challenge
 
 ## 1) CI/CD pipleline design
 
-The pipeline image is [Here](PipelineDiagram/pipeline.drawio.png).  With further reading included [PipelineDiagram/Readme.md] (PipelineDiagram/Readme.md).  I desided to include it in a side document because the diagram was becoming crowded.
+The pipeline image is [Here](PipelineDiagram/pipeline.drawio.png).  With further reading included [PipelineDiagram/Readme.md](PipelineDiagram/Readme.md).  I desided to include it in a side document because the diagram was becoming crowded.
 
 ## 2) A running deployment of a part of the pipeline – 
 
