@@ -1,6 +1,6 @@
 # This is a manifest of releases that have been deployed
 
-Note much of this content is already provided by GitHub [Here](https://github.com/thegentlemanphysicist/code_challenge_2021/releases).  However for a more complicated deployments we could also log thing like build and deployment parameters passed into the build.  Note the `manifest-genration.yaml` action runs whenever releases are created. We can extend the functionality as needed to do things like update the manifest in the `package.json` file to reflect the current release of the project.
+Note much of this content is already provided by GitHub [Here](https://github.com/thegentlemanphysicist/code_challenge_2021/releases).  However for a more complicated deployments we could also log data like build and deployment parameters passed into the build.  Note the `manifest-genration.yaml` action runs whenever releases are created. We can extend the functionality as needed to do things like update the manifest in the `package.json` file to reflect the current release of the project.
 
 ---
 
