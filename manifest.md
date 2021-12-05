@@ -38,4 +38,11 @@ Release date: $(date +'%Y-%m-%dT%H:%M:%S')
 
 Release published by:  thegentlemanphysicist 
 
+---\
+Release number: refs/tags/v1.0.18 
+
+Release date: 2021-12-05T20:03:42
+
+Release published by:  thegentlemanphysicist 
+
 ---
